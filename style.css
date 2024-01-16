@@ -65,28 +65,28 @@ text-transform: uppercase;
 
 
 }
-.rates-section{
+
+
+/* ================ Стили для 2-й секции ================ */
+
+.rates-section {
     background-color: #F9FAFC;
     padding: 100px 0;
-    ;
 }
 
-.title {
-    color: #363940;
-font-size: 32px;
-font-weight: 500;
-line-height: 43px;
-letter-spacing: 0px;
-margin-bottom: 20px;
+.rates-section .title {
+    margin-bottom: 20px;
+}
 
-
+.rates-section .text {
+    margin-bottom: 40px;
 }
 
 .table {
     border-collapse: collapse;
 }
 
-th, td {
+th, td { /* Стилизуем по названию тега */
     border: 1px solid #95A1BB;
     width: 240px;
     padding: 15px 0;
@@ -100,56 +100,131 @@ th, td {
     line-height: 22px;
 }
 
-.table-subtitle{
+.table-subtitle {
     color: #363940;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-text-align: left;
-padding-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 20px;
+}
 
+.table-subtitle.gray { 
+    color: #95A1BB; /* стиль применится, если у элемента будут эти оба класса */
 }
-.table-subtitle.grey {
-    color: #95A1BB;
-}
+
 .table-link {
-    background: #0A61F7;
-
+    color: #0A61F7;
 }
 
 .table-button {
     width: 140px;
     padding: 8px 0;
-height: 36px;
-top: 1334px;
-left: 760px;
-border-radius: 4px;
-border: 1px solid #0A61F7;
-font-size: 12px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: 1.4px;
-text-transform: uppercase;
-color: #0A61F7;
-
-}
-.table-button.active {
-background: #0A61F7;
-color:#FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.6px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #0A61F7;
 }
 
-.table-footer td{
-padding: 30px 0;
+.table-button.active { /* эти свойства применятся, если у кнопки будут оба класса */
+    background: #0A61F7;
+    color: #FFF;
 }
+
+.table-footer td { 
+    padding: 30px 0;
+}
+
+
+/* ================ Стили для 3-й секции ================ */
 
 .create-account-section {
     padding: 100px 0;
 }
 
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
 .list-item {
-    list-style-image: url("assets/images/Check.svg");
+    list-style-image: url("./assets/images/Check.svg");
     margin-left: 30px;
     margin-bottom: 15px;
     color: #363940;
+}
 
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+input, select, fieldset, textarea {
+    border-radius: 4px;
+    border: 1px solid #95A1BB;
+    padding: 14px 15px;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 22.4px;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="date"], select {
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+select {
+    background: url(./assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(./assets/images/Calendar.svg) no-repeat;
+}
+
+/* ================ Стили для футера ================ */
+
+.footer {
+    background-color: #0A61F7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#FFF;
 }
