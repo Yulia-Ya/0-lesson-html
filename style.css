@@ -18,3 +18,35 @@ a{
 ul {
     list-style: none;
 }
+
+button{
+    border: none;
+    background-color: transparent;
+}
+.menu-link{
+color: #FFFF;
+font-family: Rubik;
+font-size: 12px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 1.4px;
+text-transform: uppercase;
+
+}
+
+.main-title {
+color: #363940;
+font-size: 58px;
+font-weight: 500;
+line-height: 68px;
+margin-bottom: 30px;
+}
+
+.text {
+color: #95A1BB;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+margin-bottom: 40px;
+
+}
