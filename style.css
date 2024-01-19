@@ -206,12 +206,12 @@ form .button {
 }
 
 select {
-    background: url(./assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    background: url("./assets/images/Arrow-down.svg") no-repeat right 15px top 50%;
     appearance: none;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url(./assets/images/Calendar.svg) no-repeat;
+    background: url("./assets/images/Calendar.svg") no-repeat;
 }
 
 /* ================ Стили для футера ================ */
